@@ -43,6 +43,7 @@ const PatientTable = (props) => {
       setCurrentPage(0);
       setPatientListInView(filteredList.slice(0, filteredList.length + 1));
       setCount(filteredList.length);
+      setNumItemsPerPage(filteredList.length);
       setTotalPages(1);
     } else {
       setNumItemsPerPage(5);
@@ -57,11 +58,7 @@ const PatientTable = (props) => {
   };
 
   const updatePatientHandler = (patient, updatedPatientData) => {
-    console.log(patient);
-    console.log(updatedPatientData);
-
     if (patient === null) {
-      console.log("creating");
       let resource = {
         resourceType: "Patient",
         name: [
@@ -72,19 +69,14 @@ const PatientTable = (props) => {
         gender: `${updatedPatientData.gender}`,
         birthDate: `${updatedPatientData.dob}`,
       };
-      endpoints.createPatient(resource).then((res) => {
-        console.log(res);
-      });
+      endpoints.createPatient(resource).then((res) => {});
     } else {
-      console.log("updating");
       let resource = patient.resource;
       resource.name[0].given[0] = updatedPatientData.name;
       resource.birthDate = updatedPatientData.dob;
       resource.gender = updatedPatientData.gender;
 
-      endpoints.updatePatient(patient.resource.id, resource).then((res) => {
-        console.log(res.data);
-      });
+      endpoints.updatePatient(patient.resource.id, resource).then((res) => {});
     }
 
     setShowModal(false);
@@ -193,7 +185,7 @@ const PatientTable = (props) => {
                                   ? "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
                                   : "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.2&w=160&h=160&q=80"
                               }
-                              alt="default-patient-image"
+                              alt="default-patient"
                             />
                           </div>
                           <div
