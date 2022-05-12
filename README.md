@@ -2,9 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[ReactJS]<img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
-[JavaScript]<img src="https://img.shields.io/badge/JavaScript%20-%23F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white"/>
-[TailwindCSS]<img src="https://img.shields.io/badge/Tailwind_CSS%20-%2338B2AC.svg?&style=for-the-badge&logo=Tailwind%20CSS&logoColor=white"/>
+<img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>
+<img src="https://img.shields.io/badge/JavaScript%20-%23F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS%20-%2338B2AC.svg?&style=for-the-badge&logo=Tailwind%20CSS&logoColor=white"/>
 
 ## About
 
@@ -68,8 +68,14 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Contributors
 
-* [Tomin Paul](https://www.linkedin.com/in/tomin-paul/) | [![Twitter Follow](https://img.shields.io/twitter/follow/tomin_paul?style=social](https://twitter.com/tomin_paul)
+* [Tomin Paul](https://www.linkedin.com/in/tomin-paul/) | [![Twitter Follow](https://img.shields.io/twitter/follow/tomin_paul?style=social)](https://twitter.com/tomin_paul)
 
 ## Screenshots
 
-![screen1]()
+![screen1](https://github.com/TominPaul/ehealth_hapi_patient/blob/main/screenshots/eHealth_hapi_patient_1.png)
+
+![screen2](https://github.com/TominPaul/ehealth_hapi_patient/blob/main/screenshots/eHealth_hapi_patient_2.png)
+
+![screen3](https://github.com/TominPaul/ehealth_hapi_patient/blob/main/screenshots/eHealth_hapi_patient_3.png)
+
+![screen4](https://github.com/TominPaul/ehealth_hapi_patient/blob/main/screenshots/eHealth_hapi_patient_4.png)
